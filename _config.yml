@@ -1,0 +1,70 @@
+title: Technology Channel
+email: gorkhatechie@gmail.com
+year: 2022
+description: >-
+  A non-profit organization with a mission to promote community learning through Open Source way in Nepal.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://technologychannel.org" # the base hostname & protocol for your site, e.g. http://example.com
+asset_base_url: /assets                                     # local assets: ending without forward slash
+# asset_base_url: https://technologychannel.sirv.com        # cdn assets: ending without forward slash
+thumbnail: thumbnail.jpg
+
+author: BRG
+author_url: https://dhanugurung.com
+
+future: true # Show blog post of future date
+permalink: /blogs/:year/:month/:day/:title/
+
+google_analytics: G-RXN8QR661J
+# Disqus Comments
+disqus:
+  shortname: brg-trainings
+
+contacts:
+  facebook:
+    url: https://www.facebook.com/technologychannel.org
+    label: Facebook
+    class: fab fa-facebook-f
+  twitter:
+    url: https://twitter.com/techchannelnp
+    label: Twitter
+    class: fab fa-twitter
+    username: "@coolbrg"
+  github:
+    url: https://github.com/technologychannel
+    label: GitHub
+    class: fab fa-github
+  linkedin:
+    url: https://www.linkedin.com/in/technology-channel-8b41b624a/
+    label: LinkdIn
+    class: fab fa-linkedin-in
+  email:
+    url: mailto:gorkhatechie@gmail.com
+    label: Email
+    class: fas fa-envelope
+  youtube:
+    url: https://www.youtube.com/c/TechnologyChannel
+    label: YouTube Channel
+    class: fab fa-youtube
+
+collections:
+  tutorials:
+    output: true
+  getting_tastes:
+    output: true
+  exercises:
+    output: true
+  projects:
+    output: true
+  bootcamps:
+    output: true
+
+paginate: 6
+paginate_path: "/blogs/page:num"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
