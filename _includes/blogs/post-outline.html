@@ -1,15 +1,17 @@
 <div class="col-md-12 col-sm-12 mb-4">
   <div class="blog-card p-2">
-    <div class="row">
-      <div class="col-md-3 post-img">
-        <img class="img-full-width ml-md-2" src="{{ site.asset_base_url }}/img/{{ include.post.thumbnail }}" alt="{{ include.post.title }}" />
-      </div>
+    <div class="row justify-content-center">
+      {% if include.post.thumbnail %}
+        <div class="col-md-3 post-img">
+          <img class="img-full-width ml-md-2" src="{{ site.asset_base_url }}/img/{{ include.post.thumbnail }}" alt="{{ include.post.title }}" />
+        </div>
+      {% endif %}
       <div class="col-md-9">
         <div class="card-body">
           <div class="border-bottom">
-            <h5 class="blog-card-title font-weight-bold">
+            <h1 class="blog-card-title font-weight-bold">
               <a class="post-title" href="{{ post.url | prepend: site.url }}">{{ include.post.title }}</a>
-            </h5>
+            </h1>
             <div class="blog-card-heading">
               <!-- <span><i class="fa fa-user mr-2"></i>{{ include.post.author }}</span> -->
               <span><i class="fa fa-calendar-alt"></i>
